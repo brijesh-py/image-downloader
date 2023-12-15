@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Image</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <h1
+      class="heading bg-black text-white p-3 text-capitalize text-center fw-bold"
+    >
+      Image Downloader
+    </h1>
+    <div class="container-fluid">
+      <div
+        class="input-group container p-2 bg-secondary border rounded mx-auto my-2"
+        style="max-width: 500px"
+      >
+        <input
+          type="search"
+          name="search"
+          class="search form-control"
+          autocomplete="disabled"
+          placeholder="Search image..."
+        />
+        <button class="btn btn-dark">Search</button>
+      </div>
+      <div class="container mx-auto">
+        <div
+          class="shadow p-2 mx-auto bg-dark rounded"
+          style="max-width: 500px"
+        >
+          <img class="img-fluid mx-auto d-block" src="./assets/car.jpg" />
+        </div>
+      </div>
+      <button
+        class="download-btn btn btn-dark mt-2 mx-auto d-block shadow rounded-0"
+      >
+        Download Image
+      </button>
+    </div>
+    <footer class="bg-black position-fixed bottom-0 w-100 shadow">
+      <div class="text-center p-3 text-white">
+        <span>
+            Developed By
+          <a class="text-decoration-none fw-bolder text-warning" href="https://github.com/brijesh-py">
+            github.com/brijesh-py
+            </a>
+          </span>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
