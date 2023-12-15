@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Download Image</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <h1
@@ -12,12 +13,13 @@
     >
       Image Downloader
     </h1>
-    <div class="container-fluid">
+    <div class="container-fluid mb-5">
       <div
-        class="input-group container p-2 bg-secondary border rounded mx-auto my-2"
-        style="max-width: 500px"
+       
       >
-        <input
+        <form  class="input-group container p-2 bg-secondary border rounded mx-auto my-2"
+        style="max-width: 500px">
+          <input
           type="search"
           name="search"
           class="search form-control"
@@ -25,22 +27,17 @@
           placeholder="Search image..."
         />
         <button class="btn btn-dark">Search</button>
+        </form>
       </div>
-      <div class="container mx-auto">
+      <div class="mx-auto container">
         <div
-          class="shadow p-2 mx-auto bg-dark rounded"
-          style="max-width: 500px"
+          class="mx-auto rounded image-container row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mb-5"
         >
-          <img class="img-fluid mx-auto d-block" src="./assets/car.jpg" />
+        
         </div>
       </div>
-      <button
-        class="download-btn btn btn-dark mt-2 mx-auto d-block shadow rounded-0"
-      >
-        Download Image
-      </button>
     </div>
-    <footer class="bg-black position-fixed bottom-0 w-100 shadow">
+    <footer class="bg-black position-fixed  bottom-0 w-100 shadow">
       <div class="text-center p-3 text-white">
         <span>
             Developed By
