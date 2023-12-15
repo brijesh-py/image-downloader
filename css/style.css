@@ -1,0 +1,27 @@
+html{
+    scroll-behavior: smooth;
+    overflow:scroll ;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.image__parent{
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.image__parent .model{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 20;
+    background-color: transparent;
+    visibility: hidden;
+    left: 0;
+}
+
+.image__parent:hover .model{
+    transition: 4s;
+    visibility: visible;
+}
